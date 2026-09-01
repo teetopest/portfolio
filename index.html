@@ -3,250 +3,526 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Toheeb Babatunde Ibrahim — Mathematics PhD | Applied Mathematics & Process Systems</title>
-  <meta name="description" content="Portfolio of Toheeb Babatunde Ibrahim: Mathematics PhD student at Bowling Green State University. Research in applied mathematics, control & numerical methods for glass manufacturing; teaching experience in calculus and algebra; skills in Python, R, MATLAB, ANSYS, LAMMPS/VMD, and CAD. Contact and CV." />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Toheeb Babatunde Ibrahim — Mathematics PhD | Applied Mathematics & Process Systems" />
-  <meta property="og:description" content="Research in applied mathematics and control/numerical methods for manufacturing; teaching and industry-facing skills." />
+  <title>Toheeb Babatunde Ibrahim | Applied Mathematics &amp; Control</title>
+  <meta name="description" content="Portfolio of Toheeb Babatunde Ibrahim, an Applied Mathematics PhD researcher working in industrial modeling, control systems, numerical analysis, and stochastic modeling." />
+  <meta property="og:title" content="Toheeb Babatunde Ibrahim | Applied Mathematics &amp; Control" />
+  <meta property="og:description" content="Industrial mathematical modeling, control systems, scientific computing, and quantitative analysis." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta property="og:image" content="https://yourdomain.com/images/DSC_4387.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#0f172a" />
 
-  <link rel="icon" href="/favicon.png" />
+  <link rel="icon" href="./favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style> html{scroll-behavior:smooth} </style>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-feature-settings: "kern"; }
+    section { scroll-margin-top: 4.75rem; }
+    .eyebrow { letter-spacing: 0.14em; }
+    .card-lift { transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
+    .card-lift:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -28px rgb(15 23 42 / 0.65); border-color: #94a3b8; }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.57rem;
+      top: 0.45rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 9999px;
+      background: #0891b2;
+      box-shadow: 0 0 0 4px #ecfeff;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: #0891b2; font-weight: 700; }
+    details[open] summary::after { content: "−"; }
+    :focus-visible { outline: 3px solid #06b6d4; outline-offset: 3px; }
+  </style>
 
-  <!-- Structured data (edit yourdomain.com and IDs) -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Toheeb Babatunde Ibrahim",
-    "jobTitle":"PhD Student, Pure and Applied Mathematics",
-    "affiliation":{"@type":"CollegeOrUniversity","name":"Bowling Green State University"},
-    "alumniOf":[
-      {"@type":"CollegeOrUniversity","name":"Gdańsk University of Technology"},
-      {"@type":"CollegeOrUniversity","name":"Università degli Studi dell'Aquila"},
-      {"@type":"CollegeOrUniversity","name":"African Institute for Mathematical Sciences (AIMS)"},
-      {"@type":"CollegeOrUniversity","name":"University of Ilorin"}
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Toheeb Babatunde Ibrahim",
+    "jobTitle": "Applied Mathematics PhD Researcher",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bowling Green State University"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Gdańsk University of Technology"},
+      {"@type": "CollegeOrUniversity", "name": "University of L'Aquila"},
+      {"@type": "CollegeOrUniversity", "name": "African Institute for Mathematical Sciences"},
+      {"@type": "CollegeOrUniversity", "name": "University of Ilorin"}
     ],
-    "url":"https://yourdomain.com",
-    "sameAs":[
-      "https://www.linkedin.com/in/ibrahim-toheeb-014663a7",
+    "sameAs": [
+      "https://linkedin.com/in/ibrahim-babatunde-toheeb",
+      "https://github.com/teetopest",
       "https://twitter.com/teetopest"
     ],
-    "email":"mailto:tibrahi@bgsu.edu",
-    "image":"https://yourdomain.com/images/portrait.jpg"
+    "email": "mailto:tibrahi@bgsu.edu",
+    "knowsAbout": [
+      "Applied Mathematics",
+      "Control Systems",
+      "Mathematical Modeling",
+      "Numerical Analysis",
+      "Stochastic Modeling",
+      "Physics-Informed Neural Networks",
+      "Engineering Simulation",
+      "Computer-Aided Design",
+      "Molecular Simulation"
+    ]
   }
   </script>
 </head>
-<body class="bg-white text-slate-800 antialiased">
-  <!-- Header -->
-  <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#top" class="font-semibold">Toheeb B. Ibrahim</a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a class="hover:underline" href="#about">About</a>
-        <a class="hover:underline" href="#research">Research</a>
-        <a class="hover:underline" href="#teaching">Teaching</a>
-        <a class="hover:underline" href="#industry">Industry</a>
-        <a class="hover:underline" href="#skills">Skills</a>
-        <a class="hover:underline" href="#education">Education</a>
-        <a class="hover:underline" href="#contact">Contact</a>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-cyan-100 selection:text-slate-950">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-slate-950 focus:shadow-lg">Skip to content</a>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="#top" class="font-semibold tracking-tight text-slate-950">Toheeb B. Ibrahim</a>
+      <button id="menuButton" type="button" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium md:hidden" aria-controls="mobileMenu" aria-expanded="false">Menu</button>
+      <nav class="hidden items-center gap-5 text-sm font-medium text-slate-600 md:flex" aria-label="Primary navigation">
+        <a class="hover:text-cyan-700" href="#about">About</a>
+        <a class="hover:text-cyan-700" href="#experience">Experience</a>
+        <a class="hover:text-cyan-700" href="#research">Research</a>
+        <a class="hover:text-cyan-700" href="#publications">Publications</a>
+        <a class="hover:text-cyan-700" href="#education">Education</a>
+        <a class="hover:text-cyan-700" href="#honors">Honors</a>
+        <a class="hover:text-cyan-700" href="#contact">Contact</a>
       </nav>
     </div>
+    <nav id="mobileMenu" class="hidden border-t border-slate-200 bg-white px-4 py-4 text-sm font-medium text-slate-700 md:hidden" aria-label="Mobile navigation">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-3">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors</a>
+        <a href="#service">Leadership</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section id="top" class="">
-    <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-[220px,1fr] gap-8 items-center">
-      <img src="./Ibrahim.JPG" alt="Portrait of Toheeb Babatunde Ibrahim" class="w-52 h-52 rounded-2xl object-cover shadow" />
-      <div>
-        <h1 class="text-3xl sm:text-5xl font-bold leading-tight">Applied Mathematics for Advanced Manufacturing & Complex Systems</h1>
-        <p class="mt-4 text-lg text-slate-600">PhD student in Mathematics at Bowling Green State University. I build mathematical models and numerical methods that improve production processes (e.g., glass manufacturing), and I teach foundational mathematics courses.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#contact" class="px-4 py-2 rounded-xl bg-slate-900 text-white">Get in touch</a>
-          <a href="./Ohio_CV_2.pdf" class="px-4 py-2 rounded-xl border border-slate-300">Download CV</a>
+  <main id="main">
+    <section id="top" class="relative overflow-hidden bg-slate-950 text-white">
+      <div class="absolute inset-0 opacity-30" aria-hidden="true" style="background-image: radial-gradient(circle at 85% 15%, #06b6d4 0, transparent 28%), radial-gradient(circle at 10% 90%, #1d4ed8 0, transparent 25%);"></div>
+      <div class="relative mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[240px,1fr] md:items-center md:py-24">
+        <div class="relative mx-auto w-56 md:mx-0">
+          <div class="absolute inset-0 translate-x-3 translate-y-3 rounded-3xl border border-cyan-400/50" aria-hidden="true"></div>
+          <div class="flex h-56 w-56 items-center justify-center overflow-hidden rounded-3xl bg-slate-800 shadow-2xl">
+            <span id="portraitFallback" class="text-5xl font-bold text-cyan-200" aria-hidden="true">TI</span>
+            <img id="portrait" src="./Ibrahim.JPG" alt="Portrait of Toheeb Babatunde Ibrahim" class="absolute h-56 w-56 rounded-3xl object-cover" />
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow text-xs font-semibold uppercase text-cyan-300">Applied Mathematics · Control · Scientific Computing</p>
+          <h1 class="mt-4 max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-6xl">Mathematical models for industrial and complex systems</h1>
+          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">I am an Applied Mathematics PhD researcher at Bowling Green State University. My work connects first-principles modeling, neural ODEs, state estimation, optimization, and feedback control to industrial glass-melting systems and other real-world problems.</p>
+          <div class="mt-6 flex flex-wrap gap-2 text-sm text-slate-200">
+            <span class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1">Industrial modeling</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1">PID &amp; LQR control</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1">Stochastic analysis</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900/80 px-3 py-1">Python · MATLAB · R</span>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded-xl bg-cyan-500 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300">Get in touch</a>
+            <a href="./new_resume-2.pdf" class="rounded-xl border border-slate-600 px-5 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200">Download CV</a>
+            <a href="https://github.com/teetopest" class="rounded-xl border border-slate-600 px-5 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200">View GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">About</h2>
-      <p class="mt-4 leading-7">I am a researcher and educator with interests spanning applied mathematics, control, numerical analysis, and process systems for manufacturing. At Bowling Green State University, I focus on mathematical frameworks that raise efficiency and product performance in glass production by integrating PDE-based modeling, control-oriented formulations, and computation.</p>
-      <ul class="mt-4 grid sm:grid-cols-2 gap-2 text-slate-600">
-        <li>Process modeling & control for manufacturing</li>
-        <li>Numerical methods & scientific computing</li>
-        <li>Data analysis with Python/R/MATLAB</li>
-        <li>Simulation (ANSYS) and molecular tools (LAMMPS/VMD)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Research Focus</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">Glass Manufacturing: Modeling, Control, & Optimization</h3>
-          <p class="mt-2 text-slate-600">Development of mathematical frameworks to improve production efficiency and product performance, combining applied mathematics, materials science, and process engineering. Emphasis on deterministic models with control-theoretic insights and numerical solvers.</p>
-          <ul class="mt-3 list-disc list-inside text-slate-600 text-sm">
-            <li>PDE/ODE models & discretization for thermal/flow behavior</li>
-            <li>Control strategies & observer design for process variables</li>
-            <li>Computational experiments & sensitivity analysis</li>
-          </ul>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">Scientific Computing & Multi‑Scale Methods</h3>
-          <p class="mt-2 text-slate-600">Numerical and computational techniques across scales—continuum models for processes and particle-level simulation baselines using LAMMPS/VMD for materials-related inquiries.</p>
-          <ul class="mt-3 list-disc list-inside text-slate-600 text-sm">
-            <li>Finite difference/finite element baselines</li>
-            <li>Verification/validation and performance profiling</li>
-            <li>Reproducible workflows in Python/MATLAB/R</li>
-          </ul>
-        </article>
-      </div>
-
-      <!-- Publications placeholder (add actual items when available) -->
-      <div class="mt-10">
-        <h3 class="text-xl font-semibold">Selected Outputs</h3>
-        <ol class="mt-4 space-y-3 list-decimal list-inside text-slate-700">
-          <li>Working papers and technical reports in applied mathematics and manufacturing systems (available upon request or forthcoming).</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- Teaching -->
-  <section id="teaching" class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Teaching</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <article class="p-5 rounded-2xl border border-slate-200">
-          <h3 class="font-semibold">Bowling Green State University (2024–2025)</h3>
-          <ul class="mt-2 list-disc list-inside text-slate-600">
-            <li>Instructor: College Algebra</li>
-            <li>Instructor: Calculus & Analytic Geometry</li>
-          </ul>
-        </article>
-        <article class="p-5 rounded-2xl border border-slate-200">
-          <h3 class="font-semibold">Prior Roles</h3>
-          <ul class="mt-2 list-disc list-inside text-slate-600">
-            <li>Teaching Assistant, African Institute for Mathematical Sciences (2019)</li>
-            <li>Graduate Teaching Assistant, Adekunle Ajasin University (2017–2018)</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industry / Projects (for employment-facing readers) -->
-  <section id="industry" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Industry & Applied Projects</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">Process Modeling & Efficiency</h3>
-          <p class="mt-2 text-slate-600">Built and evaluated control-oriented models and numerical approaches to improve production efficiency and product performance in a glass manufacturing context, working within a multidisciplinary team (applied math, materials, process engineering).</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">Computational Tooling</h3>
-          <p class="mt-2 text-slate-600">Experience with Python, R, MATLAB and engineering tools (ANSYS; LAMMPS/VMD for molecular simulation baselines; Onshape CAD; LibreCAD). Comfortable designing reproducible computational studies for decision support.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Skills</h2>
-      <div class="mt-6 grid md:grid-cols-3 gap-6">
-        <div class="p-5 rounded-2xl border border-slate-200">
-          <h3 class="font-semibold">Programming & Data</h3>
-          <ul class="mt-2 text-slate-600 space-y-1 text-sm">
-            <li>Python, R, MATLAB</li>
-            <li>Numerical methods & data analysis</li>
-          </ul>
+    <section id="about" class="border-b border-slate-200">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.3fr,0.7fr]">
+        <div>
+          <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">About</p>
+          <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Researcher, modeler, and educator</h2>
+          <div class="mt-5 space-y-4 leading-7 text-slate-600">
+            <p>My research spans mathematical modeling, control systems, numerical analysis, physics-informed machine learning, mathematical biology, and quantitative analysis. I am especially interested in translating high-fidelity physical descriptions into models that can support estimation, control, and operational decisions.</p>
+            <p>My academic path across Nigeria, Cameroon, Italy, Poland, Germany, and the United States has prepared me to work across mathematical, engineering, and scientific disciplines. I have also taught college algebra, calculus, and dynamical-systems modeling.</p>
+          </div>
         </div>
-        <div class="p-5 rounded-2xl border border-slate-200">
-          <h3 class="font-semibold">Engineering & Simulation</h3>
-          <ul class="mt-2 text-slate-600 space-y-1 text-sm">
-            <li>ANSYS; LAMMPS/VMD (basic); Onshape CAD; LibreCAD</li>
-            <li>Scientific computing workflows</li>
+        <aside class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <h3 class="font-semibold text-slate-950">Current focus</h3>
+          <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+            <li><span class="font-semibold text-slate-800">Role:</span> Research Assistant, College of Engineering, BGSU</li>
+            <li><span class="font-semibold text-slate-800">Domain:</span> Industrial glass-melting furnaces</li>
+            <li><span class="font-semibold text-slate-800">Methods:</span> Neural ODEs, observers, PID/FOPID, LQR, PSO, model reduction</li>
+            <li><span class="font-semibold text-slate-800">Location:</span> Bowling Green, Ohio, USA</li>
           </ul>
+          <p class="mt-5 border-t border-slate-200 pt-5 text-sm font-medium text-cyan-800">Open to internship opportunities in quantitative modeling, scientific computing, data analysis, and control systems.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="expertise" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Expertise</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Technical strengths</h2>
+        <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="text-sm font-semibold text-cyan-700">01</p>
+            <h3 class="mt-3 font-semibold text-slate-950">Dynamic Modeling</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">First-principles ODE/PDE models, nonlinear systems, neural ODEs, and stochastic models.</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="text-sm font-semibold text-cyan-700">02</p>
+            <h3 class="mt-3 font-semibold text-slate-950">Control &amp; Estimation</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">PID/FOPID, LQR, Luenberger observers, controller tuning, and state-space analysis.</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="text-sm font-semibold text-cyan-700">03</p>
+            <h3 class="mt-3 font-semibold text-slate-950">Scientific Computing</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Numerical analysis, simulation, optimization, model reduction, and reproducible computation.</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-5">
+            <p class="text-sm font-semibold text-cyan-700">04</p>
+            <h3 class="mt-3 font-semibold text-slate-950">Quantitative Analysis</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Probability, economic-dependent mortality, actuarial models, and data-informed decisions.</p>
+          </article>
         </div>
-        <div class="p-5 rounded-2xl border border-slate-200">
-          <h3 class="font-semibold">Communication</h3>
-          <ul class="mt-2 text-slate-600 space-y-1 text-sm">
-            <li>College Algebra; Calculus & Analytic Geometry instruction</li>
-            <li>Multidisciplinary collaboration</li>
-          </ul>
+
+        <div id="skills" class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-950">Programming &amp; data</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Python, MATLAB, R, SQL, Microsoft Excel, GNUPlot</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-950">Mathematical methods</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Numerical analysis, convex optimization, matrix analysis, probability, ODE/PDE modeling</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-950">Research communication</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Technical reporting, LaTeX typesetting, presentations, interdisciplinary collaboration</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-5">
+            <h3 class="font-semibold text-slate-950">Engineering, simulation &amp; CAD</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">ANSYS, Onshape, LibreCAD, and basic LAMMPS/VMD</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education timeline -->
-  <section id="education" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Education</h2>
-      <div class="mt-6 grid md:grid-cols-2 gap-6">
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">PhD in Mathematics (Current)</h3>
-          <p class="text-slate-600">Bowling Green State University, Ohio, USA (2024–present)</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">MSc in Nanotechnology (2023–2024)</h3>
-          <p class="text-slate-600">Gdańsk University of Technology, Poland</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">MSc in Mathematical Engineering (2022–2023)</h3>
-          <p class="text-slate-600">Università degli Studi dell'Aquila, Italy</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">MSc, African Institute for Mathematical Sciences (2018–2019)</h3>
-          <p class="text-slate-600">AIMS, Limbe, Cameroon — Thesis: Dynamic Population Model of Aquatic and Adult Mosquito Stages</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">BSc in Mathematics (2013–2017)</h3>
-          <p class="text-slate-600">University of Ilorin, Nigeria — GPA 4.77/5.0; Thesis: Free Inverse Semigroup</p>
-        </article>
-        <article class="p-5 rounded-2xl bg-white border border-slate-200">
-          <h3 class="font-semibold">Guest Researcher Positions</h3>
-          <p class="text-slate-600">Hochschule Mittweida University of Applied Sciences (2020–2021); Eberhard Karls University of Tübingen (2019)</p>
-        </article>
+    <section id="experience" class="border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Experience</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Research and teaching experience</h2>
+
+        <div class="mt-10 ml-5 border-l border-slate-300 pl-6">
+          <article class="timeline-item relative pb-10">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-slate-950">Research Assistant</h3>
+                <p class="font-medium text-cyan-800">College of Engineering, Bowling Green State University</p>
+              </div>
+              <p class="shrink-0 text-sm font-medium text-slate-500">Aug. 2025–Present</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 leading-7 text-slate-600 marker:text-cyan-600">
+              <li>Develop physics-based, control-oriented models for an industrial glass-melting furnace.</li>
+              <li>Analyze control architectures incorporating PID, LQR, and observer-based control.</li>
+              <li>Implement advanced tuning methods, including particle-swarm-optimization-tuned PID and FOPID controllers.</li>
+              <li>Study mathematical approaches for reducing high-fidelity CFD descriptions to lower-order control models.</li>
+              <li>Collaborate with academic researchers and industrial partners in a multidisciplinary project.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item relative pb-10">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-slate-950">Graduate Teaching Associate</h3>
+                <p class="font-medium text-cyan-800">Department of Mathematics &amp; Statistics, Bowling Green State University</p>
+              </div>
+              <p class="shrink-0 text-sm font-medium text-slate-500">Aug. 2024–May 2025</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 leading-7 text-slate-600 marker:text-cyan-600">
+              <li>Taught college algebra and Calculus and Analytic Geometry, including sections for biology and pre-medical students.</li>
+              <li>Coordinated course delivery and implemented established curricula and assessments.</li>
+              <li>Used GeoGebra and Desmos to visualize mathematical concepts and support student understanding.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item relative pb-10">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-slate-950">Teaching Assistant</h3>
+                <p class="font-medium text-cyan-800">African Institute for Mathematical Sciences, Cameroon</p>
+              </div>
+              <p class="shrink-0 text-sm font-medium text-slate-500">Nov.–Dec. 2019</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 leading-7 text-slate-600 marker:text-cyan-600">
+              <li>Supported Mathematical Modeling of Dynamical Systems through tutorials and computational exercises.</li>
+              <li>Guided students in using Berkeley Madonna to simulate dynamical-systems models and translate results into policy insights.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item relative">
+            <div class="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold text-slate-950">Teaching Assistant</h3>
+                <p class="font-medium text-cyan-800">Adekunle Ajasin University, Nigeria</p>
+              </div>
+              <p class="shrink-0 text-sm font-medium text-slate-500">Dec. 2017–Oct. 2018</p>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 leading-7 text-slate-600 marker:text-cyan-600">
+              <li>Tutored first-year mathematics students and supported final-year MATLAB simulations.</li>
+            </ul>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-semibold">Contact</h2>
-      <p class="mt-4 text-slate-600">The quickest way to reach me is by email or LinkedIn.</p>
-      <ul class="mt-2 space-y-1">
-        <li>Email: <a class="underline" href="mailto:tibrahi@bgsu.edu">tibrahi@bgsu.edu</a></li>
-        <li>LinkedIn: <a class="underline" href="https://www.linkedin.com/in/ibrahim-toheeb-014663a7">linkedin.com/in/ibrahim-toheeb-014663a7</a></li>
-        <li>X (Twitter): <a class="underline" href="https://twitter.com/teetopest">@teetopest</a></li>
-        <!-- Optional: add phone number if you want it public -->
-      </ul>
-    </div>
-  </section>
+    <section id="research" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Research</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Selected research projects</h2>
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6 lg:col-span-2">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full bg-cyan-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cyan-800">Industrial systems</span>
+              <span class="text-sm font-medium text-slate-500">2026</span>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold leading-7 text-slate-950">Hybrid Neural ODE-Based Dynamic Modeling and Observer-Based Material-Balance Regulation of Industrial Glass Melters</h3>
+            <p class="mt-3 leading-7 text-slate-600">A multidisciplinary project developing dynamic models and control formulations for industrial glass melting.</p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm leading-6 text-slate-600 marker:text-cyan-600">
+              <li>Developed a first-principles model of glass-melting process dynamics.</li>
+              <li>Developed a Luenberger observer to estimate unmeasured process states required for LQR design.</li>
+              <li>Contributors: Owais Khan, Xuan Dung James Nguyen, Toheeb Babatunde Ibrahim, Mohammed Abouheaf, and Josh Peeno.</li>
+            </ul>
+          </article>
 
-  <!-- Footer -->
-  <footer class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-500">
-      © <span id="year"></span> Toheeb Babatunde Ibrahim · Built with a single HTML file.
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-blue-800">Actuarial modeling</span>
+              <span class="text-sm font-medium text-slate-500">2026</span>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold leading-7 text-slate-950">Stochastic Divergence in Mortality and Its Effect on Social Security Progressivity</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">With Patrick Nyadjo. Investigated actuarial models for Social Security benefits and how economic-dependent mortality can affect benefit calculations and progressivity.</p>
+          </article>
+
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6 lg:col-span-3">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-violet-800">Computational materials</span>
+              <span class="text-sm font-medium text-slate-500">2024</span>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold leading-7 text-slate-950">Central-Force Decomposition of the 2NN-MEAM Potential</h3>
+            <p class="mt-3 leading-7 text-slate-600">Master’s research at Gdańsk University of Technology under Dr. Szymon Winczewski, examining the mathematical decomposition of the second-nearest-neighbor modified embedded-atom-method potential.</p>
+          </article>
+        </div>
+
+        <details class="mt-8 rounded-2xl border border-slate-200 bg-white p-6">
+          <summary class="cursor-pointer font-semibold text-slate-950">Research interests and relevant coursework</summary>
+          <div class="mt-5 grid gap-6 md:grid-cols-2">
+            <div>
+              <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Research interests</h3>
+              <p class="mt-2 leading-7 text-slate-600">Mathematical modeling, mathematical biology, numerical analysis, physics-informed neural networks, control systems, and quantitative analysis.</p>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-500">Coursework</h3>
+              <p class="mt-2 leading-7 text-slate-600">Discrete and continuum mechanics, matrix analysis, mathematical analysis, control systems, physics of materials, scientific research methodology, convex optimization, computer modeling and materials design, and probability theory.</p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="publications" class="border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Scholarship</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Publications and presentations</h2>
+
+        <div class="mt-8 grid gap-8 lg:grid-cols-[1.15fr,0.85fr]">
+          <div>
+            <h3 class="text-xl font-semibold text-slate-950">Peer-reviewed publications</h3>
+            <ol class="mt-5 space-y-5">
+              <li class="rounded-2xl border border-slate-200 p-5">
+                <p class="font-semibold leading-7 text-slate-950">Is increased mortality by multiple exposures to COVID-19 an overseen factor when aiming for herd immunity?</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Co-author · <em>PLOS ONE</em>, 16(7), e0253758 · 2021</p>
+                <a class="mt-3 inline-block text-sm font-semibold text-cyan-700 underline decoration-cyan-300 underline-offset-4 hover:text-cyan-900" href="https://doi.org/10.1371/journal.pone.0253758">Read the article</a>
+              </li>
+              <li class="rounded-2xl border border-slate-200 p-5">
+                <p class="font-semibold leading-7 text-slate-950">The impact of COVID-19 vaccination campaigns accounting for antibody-dependent enhancement</p>
+                <p class="mt-2 text-sm leading-6 text-slate-600">Co-author · <em>PLOS ONE</em>, 16(4), e0245417 · 2021</p>
+                <a class="mt-3 inline-block text-sm font-semibold text-cyan-700 underline decoration-cyan-300 underline-offset-4 hover:text-cyan-900" href="https://doi.org/10.1371/journal.pone.0245417">Read the article</a>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-slate-950">Selected presentations</h3>
+            <ul class="mt-5 space-y-4 text-sm leading-6 text-slate-600">
+              <li class="border-l-2 border-cyan-500 pl-4"><span class="font-semibold text-slate-900">Sustaining efficient malaria vector control while accounting for breeding-site stages</span><br />American Society of Tropical Medicine annual meeting, 2021</li>
+              <li class="border-l-2 border-cyan-500 pl-4"><span class="font-semibold text-slate-900">Mathematical modeling of <em>Anopheles</em> mosquitoes’ breeding sites to sustain efficient vector control</span><br />American Society of Tropical Medicine annual meeting, 2020</li>
+              <li class="border-l-2 border-cyan-500 pl-4"><span class="font-semibold text-slate-900">Is increased mortality by multiple exposures to COVID-19 an overseen factor when aiming for herd immunity?</span><br />Mathematical Epidemiology Conference, York University, 2021</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Education</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Academic background</h2>
+        <div class="mt-8 grid gap-5 md:grid-cols-2">
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6 md:col-span-2">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <h3 class="text-lg font-semibold text-slate-950">PhD in Applied Mathematics</h3>
+                <p class="mt-1 text-cyan-800">Bowling Green State University · Bowling Green, Ohio, USA</p>
+              </div>
+              <p class="shrink-0 text-sm font-medium text-slate-500">Aug. 2024–Present</p>
+            </div>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-semibold text-slate-950">MSc in Nanotechnology</h3>
+            <p class="mt-1 text-cyan-800">Gdańsk University of Technology · Poland</p>
+            <p class="mt-3 text-sm text-slate-500">Oct. 2023–Jan. 2025 · Grade: Dobry Plus</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-semibold text-slate-950">MSc in Mathematical Engineering</h3>
+            <p class="mt-1 text-cyan-800">University of L’Aquila · Italy</p>
+            <p class="mt-3 text-sm text-slate-500">Sept. 2022–Sept. 2023 · 108/110</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-semibold text-slate-950">Master of Mathematical Sciences</h3>
+            <p class="mt-1 text-cyan-800">African Institute for Mathematical Sciences · Cameroon</p>
+            <p class="mt-3 text-sm text-slate-500">Oct. 2018–June 2019 · Very Good Pass</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Thesis: Dynamic Population Model of Aquatic and Adult Mosquito Stages</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <h3 class="text-lg font-semibold text-slate-950">BSc in Mathematics</h3>
+            <p class="mt-1 text-cyan-800">University of Ilorin · Nigeria</p>
+            <p class="mt-3 text-sm text-slate-500">Sept. 2013–Oct. 2017 · First Class Honors</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600">GPA: 4.77/5.00 · Thesis: Free Inverse Semigroup</p>
+          </article>
+        </div>
+        <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="font-semibold text-slate-950">International research experience</h3>
+          <p class="mt-2 leading-7 text-slate-600">DAAD-supported guest research at Eberhard Karls University of Tübingen and Hochschule Mittweida University of Applied Sciences, 2019–2021.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="honors" class="border-y border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Recognition</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Honors, scholarships, and training</h2>
+        <div class="mt-8 grid gap-6 lg:grid-cols-[1.2fr,0.8fr]">
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="text-xl font-semibold text-slate-950">Selected honors and funding</h3>
+            <ul class="mt-5 divide-y divide-slate-200">
+              <li class="flex flex-col gap-1 py-3 first:pt-0 sm:flex-row sm:justify-between"><span>J. Robert &amp; G. Overman Scholarship Award, BGSU</span><span class="shrink-0 text-sm text-slate-500">2025</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>Bowling Green State University Graduate Assistantship</span><span class="shrink-0 text-sm text-slate-500">2024–Present</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>Erasmus+ Scholarship</span><span class="shrink-0 text-sm text-slate-500">2022–2024</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>Abruzzo Regional Scholarship</span><span class="shrink-0 text-sm text-slate-500">2023–2024</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>University of L’Aquila International Student Scholarship</span><span class="shrink-0 text-sm text-slate-500">2022–2023</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>AIMS Full Scholarship</span><span class="shrink-0 text-sm text-slate-500">2018–2019</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>DAAD Research Scholarship</span><span class="shrink-0 text-sm text-slate-500">2019–2021</span></li>
+              <li class="flex flex-col gap-1 py-3 sm:flex-row sm:justify-between"><span>Petroleum Technology Development Fund Scholarship</span><span class="shrink-0 text-sm text-slate-500">2016</span></li>
+              <li class="flex flex-col gap-1 py-3 last:pb-0 sm:flex-row sm:justify-between"><span>Gold Medal, National Mathematics Competition for University Students</span><span class="shrink-0 text-sm text-slate-500">2016</span></li>
+            </ul>
+          </div>
+
+          <div class="space-y-6">
+            <details class="rounded-2xl border border-slate-200 p-6" open>
+              <summary class="cursor-pointer text-xl font-semibold text-slate-950">Professional development</summary>
+              <div class="mt-5 space-y-5 text-sm leading-6 text-slate-600">
+                <div>
+                  <p class="font-semibold text-slate-900">AI-Ready Ohio · 2026</p>
+                  <p>Enterprise Technology Association training on the responsible use of AI in professional environments and the use of AI for policymakers.</p>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900">Great Lakes AI Week Conference · 2025</p>
+                  <p>Bowling Green State University, Ohio.</p>
+                </div>
+              </div>
+            </details>
+            <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h3 class="font-semibold text-slate-950">Professional membership</h3>
+              <p class="mt-2 text-sm text-slate-600">American Mathematical Society · 2024–Present</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p class="eyebrow text-xs font-semibold uppercase text-cyan-700">Leadership &amp; service</p>
+        <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-950">Contributions beyond research</h2>
+        <div class="mt-8 grid gap-5 md:grid-cols-3">
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-cyan-700">2025–Present</p>
+            <h3 class="mt-2 text-lg font-semibold text-slate-950">Vice President, Muslim Student Association</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Coordinates association activities, outreach, publicity, university compliance, and faculty correspondence at BGSU.</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-cyan-700">2023</p>
+            <h3 class="mt-2 text-lg font-semibold text-slate-950">Project Lead, Nanotechnology Erasmus Lab Work</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Coordinated laboratory scheduling, activities, materials inventory, and equipment concerns in Gdańsk.</p>
+          </article>
+          <article class="card-lift rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-sm font-semibold text-cyan-700">2017–2018</p>
+            <h3 class="mt-2 text-lg font-semibold text-slate-950">Vice President, Sustainable Development Goals</h3>
+            <p class="mt-3 text-sm leading-6 text-slate-600">Helped organize vocational training, public-health sensitization, and a secondary-school mathematics quiz during Nigeria’s National Youth Service.</p>
+          </article>
+        </div>
+
+        <details class="mt-6 rounded-2xl border border-slate-200 bg-white p-6">
+          <summary class="cursor-pointer font-semibold text-slate-950">Languages</summary>
+          <p class="mt-4 leading-7 text-slate-600">English (full professional proficiency), Yoruba (native), Italian (A2), French (A2), and Polish (A1).</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-slate-950 text-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr,0.8fr] lg:items-end">
+        <div>
+          <p class="eyebrow text-xs font-semibold uppercase text-cyan-300">Contact</p>
+          <h2 class="mt-2 text-3xl font-bold tracking-tight">Let’s connect</h2>
+          <p class="mt-4 max-w-2xl leading-7 text-slate-300">I welcome conversations about internships, mathematical modeling, scientific computing, control systems, quantitative analysis, and interdisciplinary research.</p>
+        </div>
+        <div class="grid gap-3 text-sm sm:grid-cols-2 lg:grid-cols-1">
+          <a class="rounded-xl border border-slate-700 px-4 py-3 transition hover:border-cyan-300 hover:text-cyan-200" href="mailto:tibrahi@bgsu.edu"><span class="text-slate-400">Email</span><br /><span class="font-semibold">tibrahi@bgsu.edu</span></a>
+          <a class="rounded-xl border border-slate-700 px-4 py-3 transition hover:border-cyan-300 hover:text-cyan-200" href="https://linkedin.com/in/ibrahim-babatunde-toheeb"><span class="text-slate-400">LinkedIn</span><br /><span class="font-semibold">ibrahim-babatunde-toheeb</span></a>
+          <a class="rounded-xl border border-slate-700 px-4 py-3 transition hover:border-cyan-300 hover:text-cyan-200" href="https://github.com/teetopest"><span class="text-slate-400">GitHub</span><br /><span class="font-semibold">github.com/teetopest</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950 text-slate-400">
+    <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <p>© <span id="year"></span> Toheeb Babatunde Ibrahim</p>
+      <p>Applied mathematics for real-world systems.</p>
     </div>
   </footer>
 
-  <script> document.getElementById('year').textContent = new Date().getFullYear(); </script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuButton.addEventListener("click", () => {
+      const expanded = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!expanded));
+      mobileMenu.classList.toggle("hidden");
+    });
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    const portrait = document.getElementById("portrait");
+    portrait.addEventListener("error", () => {
+      portrait.classList.add("hidden");
+    });
+  </script>
 </body>
 </html>
